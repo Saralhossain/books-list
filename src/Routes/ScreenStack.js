@@ -11,29 +11,25 @@ function ScreenStack() {
     <Stack.Navigator
       initialRouteName="Home"
       screenOptions={{
-        headerStyle: { backgroundColor: 'red' },
+        headerStyle: { backgroundColor: 'white' ,
+        headerShown:false,
+      }
       }}
     >
       <Stack.Screen 
       name="Home" component={Home} 
       options={{
-          headerRight: () => (
-            <View style={{height:50}}>
-                <Image
-                style={{height:40 , width:40}}
-                  source={require("../../assets/images/Ellipse1.png")}
-                  resizeMode='contain'
-                />
-            </View>
-          ),
-          headerLeft: () => (
-            <View style={{display:"flex" , alignItems:"center"}}>
-                <Text>Hi Nick</Text>
-            </View>
-          ),
+          headerShown:false,
+          title:"",
+          headerStyle: { backgroundColor: "#fff", borderBottomWidth: 0 },
         }}
         />
-      <Stack.Screen name="Book" component={Book} />
+      <Stack.Screen 
+      name="Book" component={Book}
+      options={{
+        title:""
+      }}
+      />
     </Stack.Navigator>
   );
 }

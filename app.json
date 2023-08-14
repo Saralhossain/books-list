@@ -4,10 +4,10 @@
     "slug": "books-list",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/images/splash.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/images/splash.png",
+      "image": "./assets/images/SplashScreen.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },

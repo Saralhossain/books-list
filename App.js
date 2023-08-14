@@ -4,13 +4,18 @@ import { GestureHandlerRootView } from "react-native-gesture-handler";
 import "react-native-gesture-handler";
 import { NavigationContainer } from "@react-navigation/native";
 import Route from "./src/Routes/ScreenStack";
+import { Provider } from "react-redux";
+import { store } from "./src/Store/index";
+
 
 export default function App() {
   console.log("App.js")
   return (
-    <NavigationContainer>
-        <Route/>
-    </NavigationContainer>
+    <Provider store={store}>
+      <NavigationContainer>
+          <Route/>
+      </NavigationContainer>
+    </Provider>
   );
 }
 

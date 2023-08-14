@@ -2,14 +2,36 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
 export default styles = StyleSheet.create({
+    headerStyle:{
+    display:"flex" , 
+    flexDirection:"row" , 
+    justifyContent:"space-between" , 
+    paddingHorizontal:20,
+    alignItems:"center",
+    padding:10,
+    marginBottom:5,
+  },
     Container: {
       display:"flex",
       flexDirection:"column" , 
-      padding:5,
-      width: "50%" , 
+      padding:15,
+      width: "100%" , 
       alignContent:"center", 
-      alignItems:"center"
+      alignItems:"center",
   },
+  searchIcon:{
+    display:"flex" , 
+    flexDirection:"row", 
+    alignItems:"center",
+    marginHorizontal:20,
+    borderRadius:30,
+    gap:10,
+    backgroundColor:"#EFEFEF",
+    paddingLeft:10,
+    marginBottom:20,
+    height:40
+  }
+  ,
   imageStyle:{
     height:200, 
     width:140, 
